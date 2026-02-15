@@ -1,3 +1,5 @@
+//Missing the value in array
+
 import java.util.Arrays;
 
 public class missing {
