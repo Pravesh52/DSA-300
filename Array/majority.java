@@ -1,24 +1,24 @@
-//Leetcode: 169. Majority Element
-
 public class majority {
     public static void main(String[] args) {
-        int arr[]={3,1,2,3};
 
-        int candidate=0;
-        int count=0;
+        int arr[] = {3,1,2,3};
+        int n = arr.length;
 
-        for(int num: arr){
-            if(count==0){
-                candidate=num;
+        for(int i = 0; i < n; i++){
+            int freq = 0;
+
+            for(int j = 0; j < n; j++){
+                if(arr[i] == arr[j]){
+                    freq++;
+                }
             }
 
-            if(num==candidate){
-                count++;
-            }else{
-                count--;
+            if(freq > n/2){
+                System.out.println("Majority element: " + arr[i]);
+                return;
             }
         }
-        System.out.println("Majority Element: "+candidate);
 
+        System.out.println("No Majority Element");
     }
 }
