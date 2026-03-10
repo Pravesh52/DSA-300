@@ -1,3 +1,5 @@
+//Merge two sorted array
+
 public class mergetwosort {
     public static void main(String[] args) {
         int arr1[]={1,2,3,0,0,0};
@@ -27,6 +29,7 @@ public class mergetwosort {
             j--;
             k--;
         }
+
         for(int z=0;z<arr1.length;z++){
             System.out.println(arr1[z]);
         }
