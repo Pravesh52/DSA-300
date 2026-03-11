@@ -7,7 +7,7 @@ public class Lowerbound {
 
         int target=9;
 
-        //result: Output: 3
+//result: Output: 3
 // Explanation: 3 is the smallest 
 // index in arr[] where element (arr[3] = 10) is greater than 
 // or equal to 9.
