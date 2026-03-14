@@ -18,7 +18,6 @@ public class mergesorted {
            
         }else{
             result[k]=arr2[j];
-          
             j++;
         }
          k++;
