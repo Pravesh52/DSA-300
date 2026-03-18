@@ -59,6 +59,19 @@ public class linkedlistmid {
         }
         System.out.println("null");
     }
+    public void reverselinkedlist(){
+        Node prev=null;
+        Node curr=head;
+        Node next;
+
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        head=prev;
+    }
     public static void main(String[] args) {
         linkedlistmid list=new linkedlistmid();
         list.insertatbeginning(10);
@@ -66,7 +79,9 @@ public class linkedlistmid {
         list.insertatend(30);
         list.insertatend(40);
         list.Display();
+        list.reverselinkedlist();
         list.findmid();
+
         list.Display();
         
     }
