@@ -201,9 +201,23 @@ public void add1(){
     }
 
     reverse();
-
-
 }
+// find middle
+ public void middle(){
+    Node slow=head;
+    Node fast=head;
+
+    while(fast!=null && fast.next!=null){
+        slow=slow.next;
+        fast=fast.next.next;
+    }
+    // System.out.println(slow.data+" <-> ");
+   while(slow!=null){
+        System.out.print(slow.data+" <-> ");
+        slow=slow.next;
+    }
+    System.out.println("null");
+ }
 
     public void display(){
         if(head==null){
@@ -226,14 +240,17 @@ public void add1(){
         list.insertatbeginning(1);
         list.insertatend(2);
         list.insertatend(3);
-        // list.insertatend(1);
-        // list.insertatend(2);
+        list.insertatend(4);
+        list.insertatend(5);
         list.display();
-        list.add1();
+        list.middle();
+
+        // list.add1();
+
 
     //    list.nthnode(2);
     // list.sort012();
-        list.display();
+        // list.display();
 
 
         
