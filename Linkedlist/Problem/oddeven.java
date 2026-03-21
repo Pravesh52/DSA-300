@@ -211,13 +211,31 @@ public void add1(){
         slow=slow.next;
         fast=fast.next.next;
     }
-    // System.out.println(slow.data+" <-> ");
-   while(slow!=null){
-        System.out.print(slow.data+" <-> ");
-        slow=slow.next;
-    }
+     System.out.print(slow.data+" <-> ");
+//    while(slow!=null){
+//         System.out.print(slow.data+" <-> ");
+//         slow=slow.next;
+//     }
     System.out.println("null");
  }
+//  Delete middle
+
+   public void Deletemiddle(){
+    if(head==null || head.next==null){
+        head=null;
+        return;
+    }
+       Node prev=null;
+       Node slow=head;
+       Node fast=head;
+       while(fast!=null && fast.next!=null){
+            prev=slow;
+            slow=slow.next;
+            fast=fast.next.next;
+           
+       }
+       prev.next=slow.next;
+   }
 
     public void display(){
         if(head==null){
@@ -243,7 +261,9 @@ public void add1(){
         list.insertatend(4);
         list.insertatend(5);
         list.display();
-        list.middle();
+        // list.middle();
+        list.Deletemiddle();
+        list.display();
 
         // list.add1();
 
