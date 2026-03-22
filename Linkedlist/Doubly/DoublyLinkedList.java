@@ -1,4 +1,4 @@
-// package Doubly;
+// Doubly Linked list
 
 public class DoublyLinkedList {
     Node head=null;

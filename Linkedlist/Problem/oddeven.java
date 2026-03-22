@@ -236,6 +236,47 @@ public void add1(){
        }
        prev.next=slow.next;
    }
+   public boolean checkPalindrome(){
+         if(head==null || head.next==null){
+            return true;
+        }
+       Node slow=head;
+       Node fast=head;
+
+       while(fast!=null && fast.next!=null){
+        slow=slow.next;
+        fast=fast.next.next;
+       }
+
+    //    Reverse second half
+
+    Node secondhalf=reverse(slow);
+    // compare firsthalf
+    Node firsthalf=head;
+
+    while(secondhalf!=null){
+        if(secondhalf.data!=firsthalf.data){
+            return false;
+        }
+    }
+    secondhalf=secondhalf.next;
+    firsthalf=firsthalf.next;
+
+    
+   }
+   private Node reverse(Node head) {
+    Node prev = null;
+    Node curr = head;
+
+    while (curr != null) {
+        Node next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+    }
+
+    return prev;
+}
 
     public void display(){
         if(head==null){
