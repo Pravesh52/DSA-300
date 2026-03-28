@@ -33,7 +33,7 @@ public class implementation {
 
     int dequeue(){
         if(front==null){
-            System.out.println("Queue is empty.");
+            System.out.println("Queue is empty....");
             return -1;
         }
         int data=front.data;
