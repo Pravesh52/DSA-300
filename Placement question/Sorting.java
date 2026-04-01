@@ -16,7 +16,7 @@ public class Sorting {
             }
         }
         for(int k=0;k<arr.length;k++){
-            System.out.println("Bubble sort: "+arr[k]);
+            System.out.println("Bubble sort : " +arr[k]);
         }
     }
 }
