@@ -68,7 +68,7 @@ public class implementation {
         stack.push(50);
 
         stack.Display();
-        System.out.println("After the Pop");
+        System.out.println("After the Pop...");
 
         stack.pop();
         stack.Display();
