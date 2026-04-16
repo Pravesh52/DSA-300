@@ -2,6 +2,8 @@ import java.util.*;
 
 public class asteroid {
 
+
+
     public static int[] asteroidCollision(int[] asteroids) {
 
         Stack<Integer> stack = new Stack<>();
