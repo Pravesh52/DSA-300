@@ -74,6 +74,15 @@ public class traversal {
     }
 
 
+    // Preorder to Inorder 
+
+
+
+
+
+    
+
+
  public static String getvalue(Node node){
     if(node==null){
         return "null";
