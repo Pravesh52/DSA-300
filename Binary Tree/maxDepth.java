@@ -2,7 +2,7 @@
 
 public class maxDepth {
 
-    public static class Node{
+     static class Node{
         int data;
         Node left;
         Node right;
