@@ -126,7 +126,9 @@ public class traversal {
             }
             if(curr.right!=null){
                 q.add(curr.right);
+
             }
+            
         }
     }
 
